@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Internal CSS */
+    .internal-css {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="3-types">
+    <!-- Inline CSS -->
+    <div style="color: blue;">Inline CSS</div>
+
+    <!-- Internal CSS -->
+    <div class="internal-css">Internal CSS</div>
+
+    <!-- External CSS -->
+    <div class="external-css">External CSS</div>
+  </section>
+
+  <!-- Box Model -->
+  <section id="box-model" style="margin-top: 100px;">
+    <div class="div">Box Model</div>
+  </section>
+
+  <!-- Positioning -->
+  <section id="positions" style="margin-top: 100px;">
+    <div class="static">The Position of this div is Static.</div>
+
+    <div class="relative">The Position of this div is Relative.</div>
+
+    <div class="absolute">The Position of this div is Absolute relative to <strong>Document Body</strong>.</div>
+    <div class="relative">
+      <div class="absolute">The Position of this div is Absolute relative to it's <strong>Positioned Ancestor</strong>.</div>
+    </div>
+
+    <div class="fixed">The Position of this div is Fixed.</div>
+
+    <div class="sticky">The Position of this div is Sticky.</div>
+  </section>
+</body>
+
+</html>
