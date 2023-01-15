@@ -5,6 +5,8 @@ body {
   margin: 0px;
 }
 nav {
+  position: sticky;
+  top: 0;
   background-color: #3E3C3C;
   color: white;
   margin: 0px;
