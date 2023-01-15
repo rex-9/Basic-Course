@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0px;
 }
-
 nav {
-  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
   background-color: #3E3C3C;
   color: white;
   margin: 0px;
@@ -14,13 +15,11 @@ nav {
   align-items: center;
   padding: 0px 154px;
 }
-
 #nav-name {
   height: fit-content;
   font-weight: normal;
   font-size: 20px;
 }
-
 #nav-list {
   display: flex;
   gap: 32px;
@@ -28,12 +27,133 @@ nav {
   list-style-type: none;
   padding: 0;
 }
-
 nav ul {
   font-size: 15px;
   font-weight: 300;
 }
-
 nav ul li:last-child {
   height: 17px;
+}
+#intro {
+  height: 100vh;
+  background-color: #1C1A19;
+  background-image: url('./assets/intro-bg.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+#intro > ul {
+  list-style-type: none;
+  margin: 0 0 0 36px;
+  padding: 0;
+  height: fit-content;
+}
+#intro > ul > li {
+  margin: 15px 0px;
+  color: #F4F5F7;
+}
+#intro > div {
+  height: fit-content;
+  margin-left: 89px;
+  width: 50%;
+}
+#intro > div > h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  font-weight: 400;
+  margin: 0;
+  color: #F55800;
+}
+#intro > div > h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 20px 0px;
+  color: #F2F2F2;
+}
+#intro > div > p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 32px;
+  margin: 0;
+  color: #F4F5F7;
+}
+
+#works > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.horizontal-line {
+  margin-left: 24px;
+  height: 1px;
+  width: 70%;
+  background-color: black;
+}
+.first-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 0px 141px;
+}
+.badge-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+.badge {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 2px;
+}
+.first-work button {
+  background-color: #F55800;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.works {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.works > article {
+  width: 369px;
+  height: 435px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact > form {
+  width: 500px;
+}
+#contact > form > input, textarea {
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+  padding: 15px 30px;
+  margin: 20px 0px;
+}
+[id=first-name] {
+  margin-right: 40px;
+}
+#first-name, #last-name {
+  width: 37%;
+}
+#email {
+  width: 88%;
+}
+textarea {
+  width: 88%;
 }
